@@ -1,0 +1,33 @@
+[style name="basic"]
+join characterbob 1 [mirrored="true"]
+characterbob: Hi!
+characterbob: I'm Bob, the "problem" guy
+[save slot="1"]
+Let's try to convince him to join our game...
+- Come on bro, don't be a pussy [if {BobJoin} <= 0]
+    characterbob: I ain't no pussy!
+    set {BobJoin} = 2
+- Look, I'm sorry, but I really need you [if {BobJoin} > 0]
+    characterbob: Since when? What could I possibly offer?
+    characterbob: I'm just here to cause trouble, you know?
+- Whatever, hanging out with you sucks anyway
+    characterbob (New portrait): ...
+    set {BobJoin} -= 1
+
+set {willJoin} = "\\"
+if {BobJoin} == 2:
+    characterbob: You know what, you've sold me
+    characterbob: But be ready for some chaos!
+else:
+    characterbob: I'm really not sure about this... 
+    [text_input text="I demand you join" var="willJoin" placeholder="I demand you join" allow_empty="true"]
+    if {willJoin} == "please":
+        characterbob: Well, if you are saying please...
+        characterbob: Alright, sure, but only because you begged
+    else:
+        characterbob: Wow.... really?
+        characterbob: No thanks \:c
+
+Looks like this conversation is done...
+[save slot="2"]
+

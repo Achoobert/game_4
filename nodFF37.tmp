@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://dci8f6bsk312f"]
+
+[ext_resource type="Script" path="res://node_2d.gd" id="1_y4k23"]
+
+[sub_resource type="CameraTexture" id="CameraTexture_sgr8y"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_y4k23")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -5.0
+offset_top = -1.0
+offset_right = 1159.0
+offset_bottom = 658.0
+
+[node name="DialogicCharacterEditorMainSection" type="Control" parent="Control"]
+anchors_preset = 0
+offset_right = 1150.0
+offset_bottom = 657.0
+
+[node name="DialogicEditor" type="Control" parent="Control"]
+anchors_preset = 0
+offset_right = 1140.0
+offset_bottom = 639.0
+
+[node name="ItemList" type="ItemList" parent="Control"]
+layout_mode = 0
+offset_left = 429.0
+offset_top = 64.0
+offset_right = 826.0
+offset_bottom = 322.0
+item_count = 1
+item_0/text = "default_item"
+item_0/icon = SubResource("CameraTexture_sgr8y")

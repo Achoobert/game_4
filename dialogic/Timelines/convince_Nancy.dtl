@@ -1,0 +1,20 @@
+[style name="basic"]
+join character_Nancy 3
+character_Nancy: Ugh, whatever. What do you want?
+character_Nancy: I'm Nancy, and I've got better things to do than play your lame game.
+[save slot="5"]
+Convincing Nancy to join your game will be challenging. Brace yourself for insults and eye rolls...
+- Come on, Nancy, it'll be fun! [if {NancyJoin} <= 0]
+    character_Nancy: Fun? With you losers? As if!
+    set {NancyJoin} -= 1
+- Seriously, Nancy, you're missing out. We're the best team [if {NancyJoin} > 0 and {NancyJoin} <= 2]
+    character_Nancy: Best team? I highly doubt that. You're probably all a bunch of losers.
+    set {NancyJoin} -= 1
+- Why don't you join us, Nancy? You'll regret it if you don't [if {NancyJoin} > 2]
+    character_Nancy: Regret? Please, I don't regret anything. Especially not wasting my time on you.
+    character_Nancy: You really think I'd stoop so low? Dream on.
+    set {NancyJoin} = 0
+
+Looks like convincing Nancy to join your game won't be easy. Good luck dealing with her attitude!
+[save slot="6"]
+

@@ -1,0 +1,5 @@
+join character_Alice 5 [ mirrored="true"]
+join character_Nancy 1 [animation="Bounce In" wait="true" mirrored="true"]
+join characterbob 0
+character_Alice: Well well well
+uhoh...
