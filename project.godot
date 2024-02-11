@@ -33,7 +33,6 @@ directories/dtl_directory={
 "current_timeline ": "res://dialogic/Timelines/current_timeline.dtl",
 "defaulttimeline": "res://defaulttimeline.dtl"
 }
-layout/style_list=["res://dialogic/Themes/basic.tres", "res://dialogic/Themes/messenger.tres"]
 layout/default_style="res://dialogic/Themes/basic.tres"
 variables={
 "AliceJoin": 0.0,
