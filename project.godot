@@ -27,13 +27,14 @@ directories/dch_directory={
 "characterbob": "res://characterbob.dch"
 }
 directories/dtl_directory={
+"ChoiceTest": "res://dialogic/Timelines/ChoiceTest.dtl",
 "convice_Alice": "res://dialogic/Timelines/convince_Alice.dtl",
 "convice_Nancy": "res://dialogic/Timelines/convince_Nancy.dtl",
 "convince_Bob": "res://dialogic/Timelines/convince_Bob.dtl",
 "current_timeline ": "res://dialogic/Timelines/current_timeline.dtl",
 "defaulttimeline": "res://defaulttimeline.dtl"
 }
-layout/default_style="res://dialogic/Themes/messenger.tres"
+layout/default_style="res://dialogic/Themes/textBoxDefaultStyle.tres"
 variables={
 "AliceJoin": 0.0,
 "BobJoin": 0.0,

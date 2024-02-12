@@ -1,8 +1,5 @@
 [style name="messenger"]
 join character_Nancy 1
-character_Nancy: Ugh, whatever. What do you want?
-character_Nancy: I'm Nancy, and I've got better things to do than play your lame game.
-[save slot="5"]
 Convincing Nancy to join your game will be challenging. Brace yourself for insults and eye rolls...
 - Come on, Nancy, it'll be fun! [if {NancyJoin} <= 0]
 	character_Nancy: Fun? With you losers? As if!

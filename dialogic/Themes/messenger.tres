@@ -1,10 +1,26 @@
-[gd_resource type="Resource" script_class="DialogicStyle" load_steps=2 format=3 uid="uid://byexfmn8njf3v"]
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=7 format=3 uid="uid://byexfmn8njf3v"]
 
 [ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style.gd" id="1_krgh5"]
+[ext_resource type="PackedScene" uid="uid://dhk6j6eb6e3q" path="res://dialogic/Modules/Layouts/Messenger/Layer_Choices/choice_layer.tscn" id="1_se7h1"]
+[ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="2_1yex8"]
+[ext_resource type="PackedScene" uid="uid://by6waso0mjpjp" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_SpeakerPortraitTextbox/textbox_with_speaker_portrait.tscn" id="3_72kn7"]
+
+[sub_resource type="Resource" id="Resource_fptb3"]
+script = ExtResource("2_1yex8")
+scene = ExtResource("3_72kn7")
+overrides = {
+"box_modulate_custom_color": "Color(0.862745, 0, 0.0313726, 1)",
+"box_size": "Vector2(300, 80)"
+}
+
+[sub_resource type="Resource" id="Resource_klwai"]
+script = ExtResource("2_1yex8")
+scene = ExtResource("1_se7h1")
+overrides = {}
 
 [resource]
 script = ExtResource("1_krgh5")
 name = "messenger"
 base_overrides = {}
-layers = Array[Resource("res://addons/dialogic/Resources/dialogic_style_layer.gd")]([])
-metadata/_latest_layer = -1
+layers = Array[ExtResource("2_1yex8")]([SubResource("Resource_fptb3"), SubResource("Resource_klwai")])
+metadata/_latest_layer = 1
