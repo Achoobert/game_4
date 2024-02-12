@@ -33,7 +33,7 @@ directories/dtl_directory={
 "current_timeline ": "res://dialogic/Timelines/current_timeline.dtl",
 "defaulttimeline": "res://defaulttimeline.dtl"
 }
-layout/default_style="res://dialogic/Themes/basic.tres"
+layout/default_style="res://dialogic/Themes/messenger.tres"
 variables={
 "AliceJoin": 0.0,
 "BobJoin": 0.0,
@@ -58,6 +58,7 @@ save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 choices/hotkey_behaviour=1
 text/autopauses={}
+layout/style_list=["res://dialogic/Themes/textBoxDefaultStyle.tres", "res://dialogic/Themes/messenger.tres", "res://dialogic/Themes/basic.tres"]
 
 [editor_plugins]
 

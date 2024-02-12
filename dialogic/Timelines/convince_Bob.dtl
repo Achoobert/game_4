@@ -1,4 +1,4 @@
-[style name="basic"]
+[style name="textBoxDefaultStyle"]
 join characterbob 1 [mirrored="true"]
 characterbob: Hi!
 characterbob: I'm Bob, the "problem" guy
@@ -30,4 +30,3 @@ else:
 
 Looks like this conversation is done...
 [save slot="2"]
-

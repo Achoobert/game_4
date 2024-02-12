@@ -1,20 +1,19 @@
-[style name="basic"]
-join character_Alice 2
+[style name="textBoxDefaultStyle"]
+join character_Alice 1
 character_Alice: Guten Tag...
 character_Alice: I'm Alice, the resident goth. Why are you bothering me?
 [save slot="3"]
 It seems like Alice might be interested in joining your game, but she lacks confidence. Reassure her to convince her to join...
 - Hey, we could really use someone with your style in our game [if {AliceJoin} <= 0]
-    character_Alice: My style? You think so?
-    set {convince_Alice} += 1
+	character_Alice: My style? You think so?
+	set {convince_Alice} += 1
 - Seriously, Alice, we need you. You bring something unique to the group [if {convince_Alice} > 0 and {AliceJoin} <= 2]
-    character_Alice: Unique? Well, I suppose I do have a certain... darkness.
-    set {AliceJoin} += 1
+	character_Alice: Unique? Well, I suppose I do have a certain... darkness.
+	set {AliceJoin} += 1
 - Come on, Alice, you'd be a perfect fit. We want you in our team [if {convince_Alice} > 2]
-    character_Alice: Really? You truly want me?
-    character_Alice: Fine, I'll join your game. But I warn you, I'm not good at this socializing thing.
-    set {AliceJoin} = 0
+	character_Alice: Really? You truly want me?
+	character_Alice: Fine, I'll join your game. But I warn you, I'm not good at this socializing thing.
+	set {AliceJoin} = 0
 
 Looks like you've convinced Alice to join the game as a warlock. Good luck with your new team member!
 [save slot="4"]
-

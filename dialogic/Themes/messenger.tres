@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=2 format=3 uid="uid://byexfmn8njf3v"]
+
+[ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style.gd" id="1_krgh5"]
+
+[resource]
+script = ExtResource("1_krgh5")
+name = "messenger"
+base_overrides = {}
+layers = Array[Resource("res://addons/dialogic/Resources/dialogic_style_layer.gd")]([])
+metadata/_latest_layer = -1
