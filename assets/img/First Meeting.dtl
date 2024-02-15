@@ -1,0 +1,15 @@
+join Tyler (normal) 1
+Tyler: Sorry I'm late! I was respecing my skills outside sitting on my electeric bike
+join Emma 2 [animation="Bounce In"]
+Emma (emma): AAAAAAAAAaaaaaaAAAAAAaaaAAAAAAa
+Tyler (Angry): Who on earth is this?
+Emma (New portrait): I TOOK SO MANY BETA BLOCKERS BUT I'm STILL HAVING TO JUST POWER THROUGH THIS PANIC ATTACK
+Tyler (New portrait): ohhhhh.this is the newbie you mentioned
+- [mess with him] Huh? She's a total grognard
+	Tyler: Whaaat? Really? (his eyes sparkle) She'd have gotten to play the old ADND 0.9 fighting man! a true classic and the strongest class of all time!
+- [Straighforward] Yeah! this is her... she's a little M O R E than I was expecting too
+	Emma (Angry): <Empty Text Event>
+	leave Emma
+- [Be nice] Be nice!
+	update Tyler (normal) 3
+	Tyler: Sorry about that... I'm nervious too....

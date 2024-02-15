@@ -22,17 +22,21 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
+"Emma": "res://dialogic/Characters/Emma.dch",
+"Tyler": "res://dialogic/Characters/Tyler.dch",
 "character_Alice": "res://dialogic/Characters/character_Alice.dch",
 "character_Nancy": "res://dialogic/Characters/character_Nancy.dch",
 "characterbob": "res://characterbob.dch"
 }
 directories/dtl_directory={
 "ChoiceTest": "res://dialogic/Timelines/ChoiceTest.dtl",
+"First Meeting": "res://assets/img/First Meeting.dtl",
 "convice_Alice": "res://dialogic/Timelines/convince_Alice.dtl",
 "convice_Nancy": "res://dialogic/Timelines/convince_Nancy.dtl",
 "convince_Bob": "res://dialogic/Timelines/convince_Bob.dtl",
 "current_timeline ": "res://dialogic/Timelines/current_timeline.dtl",
-"defaulttimeline": "res://defaulttimeline.dtl"
+"defaulttimeline": "res://defaulttimeline.dtl",
+"gpt-timeline": "res://assets/img/gpt-timeline.dtl"
 }
 layout/default_style="res://dialogic/Themes/textBoxDefaultStyle.tres"
 variables={
