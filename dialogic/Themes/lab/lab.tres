@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=3 format=3 uid="uid://dml6exmcwcyu0"]
+
+[ext_resource type="PackedScene" uid="uid://cqpb3ie51rwl5" path="res://dialogic/Themes/lab/CustomLab/custom_lab.tscn" id="1_8u1o3"]
+[ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style.gd" id="9_7ak1y"]
+
+[resource]
+script = ExtResource("9_7ak1y")
+name = "lab"
+base_scene = ExtResource("1_8u1o3")
+base_overrides = {
+"global_bg_color": "Color(0.298039, 0.2, 0.113725, 0.901961)"
+}
+layers = Array[Resource("res://addons/dialogic/Resources/dialogic_style_layer.gd")]([])
+metadata/_latest_layer = -1

@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://c1k5m0w3r40xf" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn" id="1_412mk"]
 [ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="2_pgju1"]
-[ext_resource type="PackedScene" uid="uid://by6waso0mjpjp" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_SpeakerPortraitTextbox/textbox_with_speaker_portrait.tscn" id="3_5q8oc"]
+[ext_resource type="PackedScene" uid="uid://by6waso0mjpjp" path="res://dialogic/Themes/messenger/TextboxWithPortrait/custom_textbox_with_speaker_portrait.tscn" id="3_5q8oc"]
 [ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="4_kr7sl"]
 [ext_resource type="PackedScene" uid="uid://dsbwnp5hegnu3" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn" id="5_2h1xa"]
 [ext_resource type="PackedScene" uid="uid://dhk6j6eb6e3q" path="res://dialogic/Modules/Layouts/Messenger/Layer_Choices/choice_layer.tscn" id="6_orocd"]

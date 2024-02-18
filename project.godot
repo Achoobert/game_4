@@ -36,7 +36,8 @@ directories/dtl_directory={
 "convince_Bob": "res://dialogic/Timelines/convince_Bob.dtl",
 "current_timeline ": "res://dialogic/Timelines/current_timeline.dtl",
 "defaulttimeline": "res://defaulttimeline.dtl",
-"gpt-timeline": "res://assets/img/gpt-timeline.dtl"
+"gpt-timeline": "res://assets/img/gpt-timeline.dtl",
+"simpleTest": "res://dialogic/Timelines/simpleTest.dtl"
 }
 layout/default_style="res://dialogic/Themes/textBoxDefaultStyle.tres"
 variables={
@@ -63,7 +64,7 @@ save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 choices/hotkey_behaviour=1
 text/autopauses={}
-layout/style_list=["res://dialogic/Themes/textBoxDefaultStyle.tres", "res://dialogic/Themes/messenger.tres", "res://dialogic/Themes/basic.tres"]
+layout/style_list=["res://dialogic/Themes/textBoxDefaultStyle.tres", "res://dialogic/Themes/messenger.tres", "res://dialogic/Themes/basic.tres", "res://dialogic/Themes/lab/lab.tres", "res://dialogic/Themes/referenceLayout.tres"]
 
 [editor_plugins]
 

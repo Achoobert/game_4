@@ -1,0 +1,126 @@
+[gd_scene load_steps=8 format=3 uid="uid://by6waso0mjpjp"]
+
+[ext_resource type="Script" path="res://dialogic/Themes/lab/TextWithPp/speaker_portrait_textbox_layer.gd" id="1_uwcmk"]
+[ext_resource type="Script" path="res://addons/dialogic/Modules/Character/node_portrait_container.gd" id="2_1fkfl"]
+[ext_resource type="Script" path="res://addons/dialogic/Resources/character.gd" id="3_in72g"]
+[ext_resource type="Script" path="res://addons/dialogic/Modules/Text/node_name_label.gd" id="4_m6vi1"]
+[ext_resource type="Script" path="res://addons/dialogic/Modules/Text/node_dialog_text.gd" id="5_hqvl8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dmg1w"]
+bg_color = Color(0.254902, 0.254902, 0.254902, 1)
+skew = Vector2(0.073, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="Resource" id="Resource_hbt66"]
+script = ExtResource("3_in72g")
+display_name = "Freddie"
+nicknames = []
+color = Color(0.321569, 0.321569, 0.321569, 1)
+description = "ergegr"
+scale = 1.0
+offset = Vector2(0, 0)
+mirror = false
+default_portrait = ""
+portraits = {}
+custom_info = {}
+
+[node name="TextboxWithSpeakerPortrait" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_uwcmk")
+box_panel = "res://dialogic/Themes/lab/TextboxWithPortrait/default_stylebox.tres"
+
+[node name="Anchor" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Panel" type="PanelContainer" parent="Anchor"]
+unique_name_in_owner = true
+self_modulate = Color(0.533333, 0.376471, 0.176471, 1)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -250.0
+offset_top = -200.0
+offset_right = 250.0
+offset_bottom = -75.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="HBox" type="HBoxContainer" parent="Anchor/Panel"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="PortraitPanel" type="Panel" parent="Anchor/Panel/HBox"]
+unique_name_in_owner = true
+clip_children = 1
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.3
+theme_override_styles/panel = SubResource("StyleBoxFlat_dmg1w")
+
+[node name="PortraitBackgroundColor" type="ColorRect" parent="Anchor/Panel/HBox/PortraitPanel"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -30.0
+offset_bottom = -67.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.231373)
+
+[node name="DialogicNode_PortraitContainer" type="Control" parent="Anchor/Panel/HBox/PortraitPanel/PortraitBackgroundColor"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 17.0
+offset_top = 32.0
+offset_right = 17.0
+offset_bottom = 28.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_1fkfl")
+mode = 1
+debug_character = SubResource("Resource_hbt66")
+debug_character_portrait = "speaker"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Anchor/Panel/HBox"]
+custom_minimum_size = Vector2(50, 20)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DialogicNode_NameLabel" type="Label" parent="Anchor/Panel/HBox/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+text = "Name"
+script = ExtResource("4_m6vi1")
+
+[node name="DialogicNode_DialogText" type="RichTextLabel" parent="Anchor/Panel/HBox/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/normal_font_size = 6
+bbcode_enabled = true
+text = "Some text"
+scroll_following = true
+script = ExtResource("5_hqvl8")

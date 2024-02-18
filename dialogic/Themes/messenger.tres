@@ -23,4 +23,4 @@ script = ExtResource("1_krgh5")
 name = "messenger"
 base_overrides = {}
 layers = Array[ExtResource("2_1yex8")]([SubResource("Resource_fptb3"), SubResource("Resource_klwai")])
-metadata/_latest_layer = 0
+metadata/_latest_layer = 1
