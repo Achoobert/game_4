@@ -5,7 +5,7 @@ extends Node2D
 func _ready():
 	var contacts_list = $Control/ItemList
 	contacts_list.add_item('Bob Stone')
-	contacts_list.add_item('Alice Vunderlund')
+	contacts_list.add_item('Maya Johnson')
 	contacts_list.add_item('Nancy Drew')
 	contacts_list.add_item('Tyler')
 	contacts_list.add_item('Emma')
@@ -45,14 +45,16 @@ func _on_contact_selected(index):
 		1:
 			Dialogic.start('convince_Bob')
 		2:
-			Dialogic.start('convince_Alice')
+			Dialogic.start('Maya_initialMsg')
+			#Dialogic.start('dialogic/Timelines/Maya_initialMsg')
 		3:
 			# res://dialogic/Timelines/convince_Nancy.dtl
-			Dialogic.start('dialogic/Timelines/convince_Nancy')
+			Dialogic.start('convince_Nancy')
 		4:
-			Dialogic.start('convince_Tyler')
+			Dialogic.start('Tyler_initialMsg')
+#convince_Tyler
 		5:
-			Dialogic.start('dialogic/Timelines/convince_Emma')
+			Dialogic.start('Emma_initialMsg')
 
 func _on_item_list_ready():
 	pass # Replace with function body.

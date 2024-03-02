@@ -1,0 +1,22 @@
+- Hey there, Emma!
+	join Emma 1 [animation="Bounce In"]
+	Emma (emma): Hiya! 😄 I'm so excited to hear from you!
+	- I'm reaching out because I'm starting up a D&D campaign and I think you'd be a perfect fit!
+		Emma: Oh wow, that sounds amazing! I've been itching to dive into a new adventure! Tell me everything! 🎲🐉
+		- Full disclosure: I'm pretty new to this whole DM thing, and I haven't even read the rulebook yet 🙈
+			Emma: No worries at all! We all start somewhere, right? I'm just thrilled to have the opportunity to join in the fun! Let's make some memories together! 🌟
+			- So, while we're brainstorming characters, have you ever seen the Barry Spotter series or read the Bard with the Bling trilogy? They're some of my favorites!
+				Oh my gosh, YES! Barry Spotter is a classic, and the Bard with the Bling trilogy is pure magic! I love how they weave adventure and humor together!
+				- Absolutely! And speaking of adventures, have you checked out JoNo's Bizarre Everyday Life? It's such a wild ride!
+					Emma: Yes, JoNo's Bizarre Everyday Life is so quirky and fun! The characters are so unique and the storylines are always unpredictable! It's definitely a favorite of mine!
+					- Right? It's such a blast! So, thinking about our D&D campaign, any ideas on what race and class you might want to play?
+						[wait_input]
+						jump more
+label more
+Emma: Hmm, I've always been drawn to elves for their grace and wisdom, but being a dwarf could be fun too! As for class, I'm torn between wizard and rogue. What about you?
+- Elves are definitely elegant and wise, and being a wizard would let you tap into that magical side. Plus, think of all the cool spells you could cast, like in Barry Spotter!
+	Emma: Oh, absolutely! I could totally see myself mastering spells like Lumos and Expelliarmus! It'd be like living in my own magical world! ✨
+- That would be so cool! And as a rogue, you could channel your inner trickster and use your skills to outsmart your enemies, kind of like the characters in Bard with the Bling!
+	Emma: Yes, being a rogue would let me embrace my mischievous side and pull off daring heists and stealthy maneuvers, just like the characters in the Bard with the Bling trilogy! It sounds like so much fun! 🗡️🎩
+- Both options sound amazing! Maybe we could combine the best of both worlds and create a wizard-rogue hybrid character, like a sneaky spellcaster who can vanish into thin air!
+	Emma: Whoa, that sounds epic! A wizard-rogue hybrid would be the ultimate blend of magic and stealth, like a character straight out of JoNo's Bizarre Everyday Life! Count me in for some dual-classing adventure! 🌟

@@ -31,14 +31,16 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "ChoiceTest": "res://dialogic/Timelines/ChoiceTest.dtl",
-"First Meeting": "res://assets/img/First Meeting.dtl",
+"Emma_initialMsg": "res://dialogic/Timelines/Emma_initialMsg.dtl",
+"First Meeting": "res://dialogic/Timelines/First Meeting.dtl",
+"Maya_initialMsg": "res://dialogic/Timelines/Maya_initialMsg.dtl",
+"Tyler_initialMsg": "res://dialogic/Timelines/Tyler_initialMsg.dtl",
 "convice_Alice": "res://dialogic/Timelines/convince_Alice.dtl",
 "convice_Nancy": "res://dialogic/Timelines/convince_Nancy.dtl",
 "convince_Bob": "res://dialogic/Timelines/convince_Bob.dtl",
 "current_timeline ": "res://dialogic/Timelines/current_timeline.dtl",
 "defaulttimeline": "res://defaulttimeline.dtl",
-"gpt-timeline": "res://assets/img/gpt-timeline.dtl",
-"maya_initialMsg": "res://assets/img/maya_initialMsg.dtl",
+"gpt-timeline": "res://dialogic/Timelines/gpt-timeline.dtl",
 "simpleTest": "res://dialogic/Timelines/simpleTest.dtl"
 }
 layout/default_style="res://dialogic/Themes/textBoxDefaultStyle.tres"
