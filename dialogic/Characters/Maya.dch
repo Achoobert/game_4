@@ -1,0 +1,101 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(1, 1, 1, 1),
+"custom_info": {
+"sound_mood_default": "",
+"sound_moods": {},
+"style": ""
+},
+"default_portrait": "amused",
+"description": "",
+"display_name": "Maya",
+"mirror": false,
+"nicknames": [""],
+"offset": Vector2(0, 0),
+"portraits": {
+"ANGRY": {
+"export_overrides": {
+"image": "\"res://assets/img/Maya Johnson is angry.webp\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"InGroup": {
+"export_overrides": {
+"image": "\"res://assets/img/Maya _Evergreen_ Reynolds, and Tyler _TechMage_ Johnson sitting at a table playing Dungeons & Dragons.webp\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"PFP": {
+"export_overrides": {
+"image": "\"res://assets/img/maya.webp\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"amgry": {
+"export_overrides": {
+"image": "\"res://assets/img/Maya Johnson angry.webp\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"amused": {
+"export_overrides": {
+"image": "\"res://assets/img/Maya Johnson normal talking pose.webp\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"laugh": {
+"export_overrides": {
+"image": "\"res://assets/img/Maya Johnson in a happy .webp\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"pfp": {
+"export_overrides": {
+"image": "\"res://assets/img/Maya Johnson.webp\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"smug": {
+"export_overrides": {
+"image": "\"Maya Johnson smug.webp\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"suprised": {
+"export_overrides": {
+"image": "\"res://assets/img/Maya Johnson surprised .webp\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
+"scale": 1.0
+}

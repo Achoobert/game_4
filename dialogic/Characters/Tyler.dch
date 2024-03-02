@@ -8,23 +8,59 @@
 "sound_moods": {},
 "style": ""
 },
-"default_portrait": "Angry",
+"default_portrait": "Amused",
 "description": "technomage",
 "display_name": "Tyler",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
-"Angry": {
+"Amused": {
 "export_overrides": {
-"image": "\"res://assets/img/Tyler _TechMage.angry.webp\""
+"image": "\"res://assets/img/Tyler _TechMage_ Johnson in a normal talking pose.webp\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
 "scene": ""
 },
-"New portrait": {
+"Angry": {
+"export_overrides": {
+"image": "\"res://assets/img/Tyler _angry.webp\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"At table": {
+"export_overrides": {
+"image": "\"res://assets/img/Tyler _TechMage_ Johnson sitting at a table playing Dungeons & Dragons with a group of friends.webp\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Happy": {
+"export_overrides": {
+"image": "\"res://assets/img/Tyler _TechMage_ Johnson in a happy expression.webp\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"Laugh": {
+"export_overrides": {
+"image": "\"res://assets/img/Tyler _TechMage_ Johnson.webp\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"angry_": {
 "export_overrides": {
 "image": "\"res://assets/img/Tyler _TechMage_ Johnson in an angry expression.webp\""
 },
@@ -33,9 +69,36 @@
 "scale": 1,
 "scene": ""
 },
-"normal": {
+"bnw": {
 "export_overrides": {
-"image": "\"res://assets/img/Tyler _TechMage_ Johnson in a normal talking pose.webp\""
+"image": "\"res://assets/img/Tyler _TechMage_ Johnson, suitable for use on Signal.webp\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"fuming": {
+"export_overrides": {
+"image": "\"res://assets/img/Tyler _angry.webp\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"suprised": {
+"export_overrides": {
+"image": "\"res://assets/img/Tyler _TechMage_ Johnson in a surprised expression for a visual novel character conversation.webp\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"working": {
+"export_overrides": {
+"image": "\"res://assets/img/Tyler _TechMage_ Johnson sitting at a desk, immersed in his Dungeons & Dragons universe.webp\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

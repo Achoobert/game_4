@@ -41,6 +41,24 @@
 "offset": Vector2(0, 0),
 "scale": 1,
 "scene": ""
+},
+"suprised": {
+"export_overrides": {
+"image": "\"res://assets/img/Emma _Evergreen_ Reynolds in a surprised expression for a visual novel character conversation.webp\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+},
+"working": {
+"export_overrides": {
+"image": "\"res://assets/img/Emma _Evergreen_ Reynolds, the enthusiastic newcomer to the Dungeons & Dragons world, set in 2024.webp\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
 }
 },
 "scale": 1.0

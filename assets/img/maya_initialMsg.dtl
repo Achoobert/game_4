@@ -1,0 +1,17 @@
+- Yo [if {} == ""]
+	join Maya 1
+	Maya: ... ?
+	jump 
+- Hello Maya!
+	join Maya 1
+	Maya (pfp): Hello!
+	jump 
+- Hello Maya! I'm looking for some players for a campaign I'm trying to get started!
+	join Maya 1
+	Maya: Hey! Great! that's why I posted on that LFG page. Can you tell me about yourself and the setting?
+	- I'd really prefer if you came into it totally blind ;)
+		Maya: ummm, I can understand why you'd like that... but I have very limtied time off. 
+	- OK so I've never actually played before and I haven't even read the rulebook :/
+		Maya: I have very limtied time off. Maybe once you've got some experience?
+It looks like you don't quite meet her standards...
+leave Maya

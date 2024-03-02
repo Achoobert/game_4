@@ -23,6 +23,7 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 directories/dch_directory={
 "Emma": "res://dialogic/Characters/Emma.dch",
+"Maya": "res://dialogic/Characters/Maya.dch",
 "Tyler": "res://dialogic/Characters/Tyler.dch",
 "character_Alice": "res://dialogic/Characters/character_Alice.dch",
 "character_Nancy": "res://dialogic/Characters/character_Nancy.dch",
@@ -37,6 +38,7 @@ directories/dtl_directory={
 "current_timeline ": "res://dialogic/Timelines/current_timeline.dtl",
 "defaulttimeline": "res://defaulttimeline.dtl",
 "gpt-timeline": "res://assets/img/gpt-timeline.dtl",
+"maya_initialMsg": "res://assets/img/maya_initialMsg.dtl",
 "simpleTest": "res://dialogic/Timelines/simpleTest.dtl"
 }
 layout/default_style="res://dialogic/Themes/textBoxDefaultStyle.tres"
