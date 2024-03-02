@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dcum7onu7sw1r"
+path="res://.godot/imported/Fantasy Retreat Intensity 2.wav-8621400ad429c93cf1655aee19687c0f.sample"
+
+[deps]
+
+source_file="res://assets/music/Mixtape Vol. 1/Fantasy - Retreat (RT 1.875)/Fantasy Retreat Intensity 2.wav"
+dest_files=["res://.godot/imported/Fantasy Retreat Intensity 2.wav-8621400ad429c93cf1655aee19687c0f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

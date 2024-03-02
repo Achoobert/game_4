@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c0cfdrjcg1d5w"
+path="res://.godot/imported/Unplugged Hi Old Friend Main.wav-58abbcfada3d06460de1eb037919d190.sample"
+
+[deps]
+
+source_file="res://assets/music/Mixtape Vol. 1/Unplugged - Hi Old Friend (RT 5.213)/Unplugged Hi Old Friend Main.wav"
+dest_files=["res://.godot/imported/Unplugged Hi Old Friend Main.wav-58abbcfada3d06460de1eb037919d190.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

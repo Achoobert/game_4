@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://boqsfp0015xl4"
+path="res://.godot/imported/Classical Relief Main.wav-55d25975603bed955df1d8475104114b.sample"
+
+[deps]
+
+source_file="res://assets/music/Mixtape Vol. 1/Classical - Relief (RT 2.449)/Classical Relief Main.wav"
+dest_files=["res://.godot/imported/Classical Relief Main.wav-55d25975603bed955df1d8475104114b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

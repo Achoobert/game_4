@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d2uvebmgdxihv"
+path="res://.godot/imported/Metal Promethium Main.wav-e8cbcda041df5522d3413b0e33d9d0e6.sample"
+
+[deps]
+
+source_file="res://assets/music/Mixtape Vol. 1/Metal - Promethium (RT 8.123)/Metal Promethium Main.wav"
+dest_files=["res://.godot/imported/Metal Promethium Main.wav-e8cbcda041df5522d3413b0e33d9d0e6.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

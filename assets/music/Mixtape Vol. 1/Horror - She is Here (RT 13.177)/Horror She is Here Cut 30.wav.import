@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://vl8jmok4bgck"
+path="res://.godot/imported/Horror She is Here Cut 30.wav-6b98f48f52916c8560e6a9a3e92c72bd.sample"
+
+[deps]
+
+source_file="res://assets/music/Mixtape Vol. 1/Horror - She is Here (RT 13.177)/Horror She is Here Cut 30.wav"
+dest_files=["res://.godot/imported/Horror She is Here Cut 30.wav-6b98f48f52916c8560e6a9a3e92c72bd.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

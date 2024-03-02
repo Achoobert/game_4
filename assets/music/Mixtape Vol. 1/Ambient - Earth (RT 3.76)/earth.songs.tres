@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="OvaniSong" load_steps=6 format=3 uid="uid://dsuglog8nice4"]
+
+[ext_resource type="AudioStream" uid="uid://c82c2b5sj4usv" path="res://assets/music/Mixtape Vol. 1/Ambient - Earth (RT 3.76)/Ambient Earth Intensity 1.wav" id="1_4lryr"]
+[ext_resource type="Script" path="res://addons/OvaniPlugin/OvaniSong.gd" id="1_gpmll"]
+[ext_resource type="AudioStream" uid="uid://ccf2q58hajbce" path="res://assets/music/Mixtape Vol. 1/Ambient - Earth (RT 3.76)/Ambient Earth Intensity 2.wav" id="2_hk0c8"]
+[ext_resource type="AudioStream" uid="uid://ujxa4pylh7g3" path="res://assets/music/Mixtape Vol. 1/Ambient - Earth (RT 3.76)/Ambient Earth Cut 30.wav" id="3_cy58y"]
+[ext_resource type="AudioStream" uid="uid://dlec8boqme6l7" path="res://assets/music/Mixtape Vol. 1/Ambient - Earth (RT 3.76)/Ambient Earth Cut 60.wav" id="4_gu83d"]
+
+[resource]
+script = ExtResource("1_gpmll")
+Intensity1 = ExtResource("1_4lryr")
+Intensity2 = ExtResource("2_hk0c8")
+Loop30 = ExtResource("3_cy58y")
+Loop60 = ExtResource("4_gu83d")
+ReverbTail = 0.0
+SongMode = 0

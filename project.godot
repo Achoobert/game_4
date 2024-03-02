@@ -64,7 +64,8 @@ save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 choices/hotkey_behaviour=1
 text/autopauses={}
-layout/style_list=["res://dialogic/Themes/textBoxDefaultStyle.tres", "res://dialogic/Themes/messenger.tres", "res://dialogic/Themes/basic.tres", "res://dialogic/Themes/lab/lab.tres", "res://dialogic/Themes/referenceLayout.tres"]
+layout/style_list=["res://dialogic/Themes/textBoxDefaultStyle.tres", "res://dialogic/Themes/messenger.tres", "res://dialogic/Themes/basic.tres", "res://dialogic/Themes/lab/lab.tres"]
+history/simple_history_enabled=true
 
 [editor_plugins]
 

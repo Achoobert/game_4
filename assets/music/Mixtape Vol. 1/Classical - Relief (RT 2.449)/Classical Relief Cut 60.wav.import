@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b8dx6q1lmr86"
+path="res://.godot/imported/Classical Relief Cut 60.wav-6991e5d054b19ff9e886e3e47c99ae18.sample"
+
+[deps]
+
+source_file="res://assets/music/Mixtape Vol. 1/Classical - Relief (RT 2.449)/Classical Relief Cut 60.wav"
+dest_files=["res://.godot/imported/Classical Relief Cut 60.wav-6991e5d054b19ff9e886e3e47c99ae18.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

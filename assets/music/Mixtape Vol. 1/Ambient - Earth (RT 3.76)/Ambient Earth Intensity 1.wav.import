@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c82c2b5sj4usv"
+path="res://.godot/imported/Ambient Earth Intensity 1.wav-66184daa7d137a3b9aaa9e1e6e571e60.sample"
+
+[deps]
+
+source_file="res://assets/music/Mixtape Vol. 1/Ambient - Earth (RT 3.76)/Ambient Earth Intensity 1.wav"
+dest_files=["res://.godot/imported/Ambient Earth Intensity 1.wav-66184daa7d137a3b9aaa9e1e6e571e60.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

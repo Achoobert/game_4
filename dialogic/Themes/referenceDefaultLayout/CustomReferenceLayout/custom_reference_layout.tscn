@@ -1,13 +1,28 @@
-[gd_scene load_steps=9 format=3 uid="uid://cqpb3ie51rwl5"]
+[gd_scene load_steps=13 format=3 uid="uid://cqpb3ie51rwl5"]
 
 [ext_resource type="Script" path="res://dialogic/Themes/referenceDefaultLayout/CustomReferenceLayout/default_layout_base.gd" id="1_ifsho"]
 [ext_resource type="PackedScene" uid="uid://c1k5m0w3r40xf" path="res://dialogic/Themes/lab/FullBackground/custom_full_background_layer.tscn" id="2_ewh0m"]
 [ext_resource type="PackedScene" uid="uid://by6waso0mjpjp" path="res://dialogic/Themes/lab/TextWithPp/text_with_sender_portrait.tscn" id="4_h33vo"]
 [ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="6_k8262"]
 [ext_resource type="PackedScene" uid="uid://dsbwnp5hegnu3" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn" id="8_3dqic"]
+[ext_resource type="Script" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.gd" id="8_56i54"]
+[ext_resource type="PackedScene" uid="uid://cuoywrmvda1yg" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/example_history_item.tscn" id="9_ney35"]
+[ext_resource type="Script" path="res://addons/OvaniPlugin/OvaniPlayer.gd" id="10_hhisq"]
 [ext_resource type="PackedScene" uid="uid://dhk6j6eb6e3q" path="res://dialogic/Modules/Layouts/Messenger/Layer_Choices/choice_layer.tscn" id="10_rl6p0"]
+[ext_resource type="Resource" uid="uid://dsuglog8nice4" path="res://assets/music/Mixtape Vol. 1/Ambient - Earth (RT 3.76)/earth.songs.tres" id="11_q33h4"]
 [ext_resource type="PackedScene" uid="uid://cvgf4c6gg0tsy" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn" id="12_bdyy4"]
-[ext_resource type="PackedScene" uid="uid://lx24i8fl6uo" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn" id="14_i1n13"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1hdvb"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0, 0, 0, 0.776471)
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
 
 [node name="Custom" type="CanvasLayer"]
 script = ExtResource("1_ifsho")
@@ -30,12 +45,76 @@ apply_overrides_on_ready = true
 [node name="TextInputLayer" parent="." instance=ExtResource("12_bdyy4")]
 apply_overrides_on_ready = true
 
-[node name="ExampleHistoryScene" parent="." instance=ExtResource("14_i1n13")]
-font_use_global_size = true
-font_custom_size = 15
-font_use_global_fonts = true
-font_custom_normal = ""
-font_custom_bold = ""
-font_custom_italics = ""
-disabled = false
+[node name="ExampleHistoryScene" type="Control" parent="."]
+layout_direction = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+script = ExtResource("8_56i54")
+HistoryItem = ExtResource("9_ney35")
 apply_overrides_on_ready = true
+
+[node name="HistoryBox" type="ScrollContainer" parent="ExampleHistoryScene"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -273.0
+offset_right = 278.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_1hdvb")
+horizontal_scroll_mode = 0
+
+[node name="HistoryLog" type="VBoxContainer" parent="ExampleHistoryScene/HistoryBox"]
+unique_name_in_owner = true
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ShowHistory" type="Button" parent="ExampleHistoryScene"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -73.0
+offset_top = 7.0
+offset_right = -9.0
+offset_bottom = 38.0
+grow_horizontal = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "History"
+
+[node name="HideHistory" type="Button" parent="ExampleHistoryScene"]
+visible = false
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -123.0
+offset_top = 58.0
+offset_right = -62.0
+offset_bottom = 89.0
+grow_horizontal = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Return"
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource("10_hhisq")
+QueuedSongs = Array[Resource("res://addons/OvaniPlugin/OvaniSong.gd")]([ExtResource("11_q33h4")])
+Volume = 0.89
+
+[connection signal="pressed" from="ExampleHistoryScene/ShowHistory" to="ExampleHistoryScene" method="_on_show_history_pressed"]
+[connection signal="pressed" from="ExampleHistoryScene/HideHistory" to="ExampleHistoryScene" method="_on_hide_history_pressed"]

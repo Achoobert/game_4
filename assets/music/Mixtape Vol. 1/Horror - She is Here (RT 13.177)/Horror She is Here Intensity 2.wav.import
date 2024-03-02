@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bc6rkiosbvjnh"
+path="res://.godot/imported/Horror She is Here Intensity 2.wav-c699feb11f7897a5d849f38a6fb29f49.sample"
+
+[deps]
+
+source_file="res://assets/music/Mixtape Vol. 1/Horror - She is Here (RT 13.177)/Horror She is Here Intensity 2.wav"
+dest_files=["res://.godot/imported/Horror She is Here Intensity 2.wav-c699feb11f7897a5d849f38a6fb29f49.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://kxcwc74s18r7"
+path="res://.godot/imported/Japanese Ichiba Intensity 1.wav-a418e414cf99af978c70e1e613470eeb.sample"
+
+[deps]
+
+source_file="res://assets/music/Mixtape Vol. 1/Japanese - Ichiba (RT 2.4)/Japanese Ichiba Intensity 1.wav"
+dest_files=["res://.godot/imported/Japanese Ichiba Intensity 1.wav-a418e414cf99af978c70e1e613470eeb.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
