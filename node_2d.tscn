@@ -16,21 +16,30 @@ offset_right = 1159.0
 offset_bottom = 658.0
 
 [node name="DialogicCharacterEditorMainSection" type="Control" parent="Control"]
+visible = false
 anchors_preset = 0
 offset_right = 1150.0
 offset_bottom = 657.0
 
 [node name="DialogicEditor" type="Control" parent="Control"]
+visible = false
+anchors_preset = 0
+offset_right = 1140.0
+offset_bottom = 639.0
+
+[node name="DialogicEditor" type="Control" parent="Control/DialogicEditor"]
+visible = false
+layout_mode = 3
 anchors_preset = 0
 offset_right = 1140.0
 offset_bottom = 639.0
 
 [node name="ItemList" type="ItemList" parent="Control"]
 layout_mode = 0
-offset_left = 429.0
-offset_top = 64.0
-offset_right = 826.0
-offset_bottom = 322.0
+offset_left = 15.0
+offset_top = 63.0
+offset_right = 300.0
+offset_bottom = 321.0
 item_count = 1
 item_0/text = "default_item"
 item_0/icon = SubResource("CameraTexture_sgr8y")

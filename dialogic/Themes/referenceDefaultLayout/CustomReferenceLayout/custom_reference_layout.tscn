@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="6_k8262"]
 [ext_resource type="PackedScene" uid="uid://dsbwnp5hegnu3" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Glossary/glossary_popup_layer.tscn" id="8_3dqic"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.gd" id="8_56i54"]
-[ext_resource type="PackedScene" uid="uid://cuoywrmvda1yg" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/example_history_item.tscn" id="9_ney35"]
+[ext_resource type="PackedScene" uid="uid://cuoywrmvda1yg" path="res://addons/dialogic/Modules/Messenger/OverlayHistory/message_item.tscn" id="9_ney35"]
 [ext_resource type="Script" path="res://addons/OvaniPlugin/OvaniPlayer.gd" id="10_hhisq"]
 [ext_resource type="PackedScene" uid="uid://dhk6j6eb6e3q" path="res://dialogic/Modules/Layouts/Messenger/Layer_Choices/choice_layer.tscn" id="10_rl6p0"]
 [ext_resource type="Resource" uid="uid://dsuglog8nice4" path="res://assets/music/Mixtape Vol. 1/Ambient - Earth (RT 3.76)/earth.songs.tres" id="11_q33h4"]
