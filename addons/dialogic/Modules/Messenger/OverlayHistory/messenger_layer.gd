@@ -27,11 +27,12 @@ extends DialogicLayoutLayer
 @export var show_name_colors: bool = true
 @export var name_delimeter: String = ": "
 
+var DialogicUtil = preload("res://addons/dialogic/Core/DialogicUtil.gd")
 var scroll_to_bottom_flag: bool = false
 
 @export_group('Private')
 @export var MessageItem: PackedScene = null
-@export var HistoryItem: PackedScene = null
+# @export var HistoryItem: PackedScene = null
 
 var message_item_theme: Theme = null
 
@@ -57,14 +58,17 @@ func get_history_log() -> VBoxContainer:
 func _ready() -> void:
 	if Engine.is_editor_hint():
 		return
+	# HELLO, lets start listening to the "open requested" signal
+	#  when we hear it, run _on_show_history_pressed
 	Dialogic.History.open_requested.connect(_on_show_history_pressed)
+	show_history()
 	#Dialogic.History.close_requested.connect(_on_hide_history_pressed)
 
 
 func _apply_export_overrides() -> void:
 	var history_subsystem: Node = DialogicUtil.autoload().get(&'History')
-	#if history_subsystem != null:
-		#get_show_history_button().visible = show_open_button and history_subsystem.get(&'simple_history_enabled')
+	if history_subsystem != null:
+		get_show_history_button().visible = show_open_button and history_subsystem.get(&'simple_history_enabled')
 	#else:
 	#show_messages_button().visible
 	#set(&'visible', true)
@@ -101,6 +105,7 @@ func _process(_delta : float) -> void:
 
 func _on_show_history_pressed() -> void:
 	# TODO what is this actually trying to do>
+	# I think this is what renders the history????
 	#DialogicUtil.autoload().paused = true
 	show_history()
 
@@ -109,42 +114,47 @@ func show_history() -> void:
 	for child: Node in get_history_log().get_children():
 		child.queue_free()
 
+	# Since we want to show the history, locally, we need to get the history from the history subsystem
+	# var history_subsystem: Node = DialogicUtil.autoload().get(&'History')
+	# we arn't accessing this from a signal anymore, so we need to get the history from the history subsystem
+	# FILEPATH: /Users/achoobert/godot/game_4/addons/dialogic/Modules/Messenger/OverlayHistory/messenger_layer.gd
 	var history_subsystem: Node = DialogicUtil.autoload().get(&'History')
-	for info: Dictionary in history_subsystem.call(&'get_simple_history'):
-		var h_item : Node = HistoryItem.instantiate()
-		var message_item : Node = MessageItem.instantiate()
-		message_item.set(&'theme', message_item_theme)
-		# TODO @achoobert this is where we add the pfp
-		match info.event_type:
-			"Text":
-				if info.has('character') and info['character']:
-					if show_name_colors:
-						message_item.call(&'load_info', info['text'], info['character']+name_delimeter, info['character_color'])
-					else:
-						message_item.call(&'load_info', info['text'], info['character']+name_delimeter)
-				else:
-					message_item.call(&'load_info', info['text'])
-			"Character":
-				if !show_join_and_leave:
-					message_item.queue_free()
-					continue
-				message_item.call(&'load_info', '[i]'+info['text'])
-			"Choice":
-				var choices_text: String = ""
-				if show_all_choices:
-					for i : String in info['all_choices']:
-						if i.ends_with('#disabled'):
-							choices_text += "-  [i]("+i.trim_suffix('#disabled')+")[/i]\n"
-						elif i == info['text']:
-							choices_text += "-> [b]"+i+"[/b]\n"
+	if history_subsystem != null:
+		for info: Dictionary in history_subsystem.call(&'get_simple_history'):
+			# var h_item : Node = HistoryItem.instantiate()
+			var message_item : Node = MessageItem.instantiate()
+			message_item.set(&'theme', message_item_theme)
+			# TODO @achoobert this is where we add the pfp
+			match info.event_type:
+				"Text":
+					if info.has('character') and info['character']:
+						if show_name_colors:
+							message_item.call(&'load_info', info['text'], info['character']+name_delimeter, info['character_color'])
 						else:
-							choices_text += "-> "+i+"\n"
-				else:
-					choices_text += "- [b]"+info['text']+"[/b]\n"
-				message_item.call(&'load_info', choices_text)
+							message_item.call(&'load_info', info['text'], info['character']+name_delimeter)
+					else:
+						message_item.call(&'load_info', info['text'])
+				"Character":
+					if !show_join_and_leave:
+						message_item.queue_free()
+						continue
+					message_item.call(&'load_info', '[i]'+info['text'])
+				"Choice":
+					var choices_text: String = ""
+					if show_all_choices:
+						for i : String in info['all_choices']:
+							if i.ends_with('#disabled'):
+								choices_text += "-  [i]("+i.trim_suffix('#disabled')+")[/i]\n"
+							elif i == info['text']:
+								choices_text += "-> [b]"+i+"[/b]\n"
+							else:
+								choices_text += "-> "+i+"\n"
+					else:
+						choices_text += "- [b]"+info['text']+"[/b]\n"
+					message_item.call(&'load_info', choices_text)
 
-		# TODO @achoobert
-		get_history_log().add_child(message_item)
+			# TODO @achoobert
+			get_history_log().add_child(message_item)
 
 	if scroll_to_bottom:
 		scroll_to_bottom_flag = true

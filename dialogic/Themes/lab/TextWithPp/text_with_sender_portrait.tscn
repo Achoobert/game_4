@@ -38,6 +38,7 @@ script = ExtResource("1_uwcmk")
 box_panel = "res://dialogic/Themes/lab/TextboxWithPortrait/default_stylebox.tres"
 
 [node name="Anchor" type="Control" parent="."]
+custom_minimum_size = Vector2(10, 10)
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -47,7 +48,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="Panel" type="PanelContainer" parent="Anchor"]
+[node name="Panel" type="PanelContainer" parent="."]
 unique_name_in_owner = true
 self_modulate = Color(0.533333, 0.376471, 0.176471, 1)
 layout_mode = 1
@@ -56,18 +57,18 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -250.0
-offset_top = -200.0
-offset_right = 250.0
-offset_bottom = -75.0
+offset_left = -565.0
+offset_top = -606.0
+offset_right = 666.0
+offset_bottom = -24.0
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="HBox" type="HBoxContainer" parent="Anchor/Panel"]
+[node name="HBox" type="HBoxContainer" parent="Panel"]
 layout_mode = 2
 theme_override_constants/separation = 15
 
-[node name="PortraitPanel" type="Panel" parent="Anchor/Panel/HBox"]
+[node name="PortraitPanel" type="Panel" parent="Panel/HBox"]
 unique_name_in_owner = true
 clip_children = 1
 layout_mode = 2
@@ -75,7 +76,7 @@ size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.3
 theme_override_styles/panel = SubResource("StyleBoxFlat_dmg1w")
 
-[node name="PortraitBackgroundColor" type="ColorRect" parent="Anchor/Panel/HBox/PortraitPanel"]
+[node name="PortraitBackgroundColor" type="ColorRect" parent="Panel/HBox/PortraitPanel"]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
@@ -87,7 +88,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.231373)
 
-[node name="DialogicNode_PortraitContainer" type="Control" parent="Anchor/Panel/HBox/PortraitPanel/PortraitBackgroundColor"]
+[node name="DialogicNode_PortraitContainer" type="Control" parent="Panel/HBox/PortraitPanel/PortraitBackgroundColor"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -103,19 +104,19 @@ mode = 1
 debug_character = SubResource("Resource_hbt66")
 debug_character_portrait = "speaker"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Anchor/Panel/HBox"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/HBox"]
 custom_minimum_size = Vector2(50, 20)
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="DialogicNode_NameLabel" type="Label" parent="Anchor/Panel/HBox/VBoxContainer"]
+[node name="DialogicNode_NameLabel" type="Label" parent="Panel/HBox/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_font_sizes/font_size = 8
 text = "Name"
 script = ExtResource("4_m6vi1")
 
-[node name="DialogicNode_DialogText" type="RichTextLabel" parent="Anchor/Panel/HBox/VBoxContainer"]
+[node name="DialogicNode_DialogText" type="RichTextLabel" parent="Panel/HBox/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
