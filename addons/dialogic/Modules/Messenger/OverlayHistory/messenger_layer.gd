@@ -31,10 +31,14 @@ var scroll_to_bottom_flag: bool = false
 
 @export_group('Private')
 @export var MessageItem: PackedScene = null
+@export var HistoryItem: PackedScene = null
 
 var message_item_theme: Theme = null
 
 func get_show_history_button() -> Button:
+	return $ShowMessages
+	
+func show_messages_button() -> Button:
 	return $ShowMessages
 
 
@@ -54,15 +58,16 @@ func _ready() -> void:
 	if Engine.is_editor_hint():
 		return
 	Dialogic.History.open_requested.connect(_on_show_history_pressed)
-	Dialogic.History.close_requested.connect(_on_hide_history_pressed)
+	#Dialogic.History.close_requested.connect(_on_hide_history_pressed)
 
 
 func _apply_export_overrides() -> void:
 	var history_subsystem: Node = DialogicUtil.autoload().get(&'History')
-	if history_subsystem != null:
-		get_show_history_button().visible = show_open_button and history_subsystem.get(&'simple_history_enabled')
-	else:
-		set(&'visible', false)
+	#if history_subsystem != null:
+		#get_show_history_button().visible = show_open_button and history_subsystem.get(&'simple_history_enabled')
+	#else:
+	#show_messages_button().visible
+	#set(&'visible', true)
 
 	message_item_theme = Theme.new()
 
@@ -83,7 +88,9 @@ func _apply_export_overrides() -> void:
 
 
 
+# TODO @achoobert
 func _process(_delta : float) -> void:
+	show_history()
 	if Engine.is_editor_hint():
 		return
 	if scroll_to_bottom_flag and get_history_box().visible and get_history_log().get_child_count():
@@ -93,18 +100,21 @@ func _process(_delta : float) -> void:
 
 
 func _on_show_history_pressed() -> void:
-	DialogicUtil.autoload().paused = true
+	# TODO what is this actually trying to do>
+	#DialogicUtil.autoload().paused = true
 	show_history()
 
-
+# @achoobert
 func show_history() -> void:
 	for child: Node in get_history_log().get_children():
 		child.queue_free()
 
 	var history_subsystem: Node = DialogicUtil.autoload().get(&'History')
 	for info: Dictionary in history_subsystem.call(&'get_simple_history'):
+		var h_item : Node = HistoryItem.instantiate()
 		var message_item : Node = MessageItem.instantiate()
 		message_item.set(&'theme', message_item_theme)
+		# TODO @achoobert this is where we add the pfp
 		match info.event_type:
 			"Text":
 				if info.has('character') and info['character']:
@@ -133,19 +143,20 @@ func show_history() -> void:
 					choices_text += "- [b]"+info['text']+"[/b]\n"
 				message_item.call(&'load_info', choices_text)
 
+		# TODO @achoobert
 		get_history_log().add_child(message_item)
 
 	if scroll_to_bottom:
 		scroll_to_bottom_flag = true
 
-	get_show_history_button().hide()
-	get_hide_history_button().visible = show_close_button
+	#get_show_history_button().hide()
+	#get_hide_history_button().visible = show_close_button
 	get_history_box().show()
 
 
-func _on_hide_history_pressed() -> void:
-	DialogicUtil.autoload().paused = false
-	get_history_box().hide()
-	get_hide_history_button().hide()
-	var history_subsystem: Node = DialogicUtil.autoload().get(&'History')
-	get_show_history_button().visible = show_open_button and history_subsystem.get(&'simple_history_enabled')
+#func _on_hide_history_pressed() -> void:
+	#DialogicUtil.autoload().paused = false
+	#get_history_box().hide()
+	#get_hide_history_button().hide()
+	#var history_subsystem: Node = DialogicUtil.autoload().get(&'History')
+	#get_show_history_button().visible = show_open_button and history_subsystem.get(&'simple_history_enabled')

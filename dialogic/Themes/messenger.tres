@@ -27,6 +27,9 @@ overrides = {}
 [resource]
 script = ExtResource("1_krgh5")
 name = "messenger"
-base_overrides = {}
+base_overrides = {
+"global_bg_color": "Color(0.203922, 0.145098, 0.556863, 0.901961)",
+"global_font_size": "20.0"
+}
 layers = Array[ExtResource("2_1yex8")]([SubResource("Resource_fptb3"), SubResource("Resource_klwai"), SubResource("Resource_fgim8")])
-metadata/_latest_layer = 2
+metadata/_latest_layer = -1

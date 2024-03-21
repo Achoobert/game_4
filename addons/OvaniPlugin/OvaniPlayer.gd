@@ -1,5 +1,5 @@
 @tool
-@icon("res://addons/OvaniPlugin/OvaniPlayerIcon.png")
+@icon("res://OvaniPlugin/OvaniPlayerIcon.png")
 class_name OvaniPlayer
 ## The OvaniPlayer will let you easily Manage dynamic music in your game, via [OvaniSong]s.
 ## 
@@ -36,7 +36,7 @@ extends Node
 ## This is the Godot Audio Bus that your music will play through. Can be assigned dynamically.
 @export var Bus : StringName = "Master":
 	get:
-		if _audioPlayer != null:
+		if _audioPlayer != null && !Engine.is_editor_hint():
 			return _audioPlayer.bus;
 		else:
 			return Bus;

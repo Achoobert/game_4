@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dci8f6bsk312f"]
+[gd_scene load_steps=5 format=3 uid="uid://dci8f6bsk312f"]
 
 [ext_resource type="Script" path="res://node_2d.gd" id="1_y4k23"]
+[ext_resource type="Script" path="res://addons/OvaniPlugin/OvaniPlayer.gd" id="2_s043o"]
+[ext_resource type="Resource" uid="uid://dsuglog8nice4" path="res://assets/music/Mixtape Vol. 1/Ambient - Earth (RT 3.76)/earth.songs.tres" id="3_mi722"]
 
 [sub_resource type="CameraTexture" id="CameraTexture_sgr8y"]
 
@@ -43,6 +45,13 @@ offset_bottom = 321.0
 item_count = 1
 item_0/text = "default_item"
 item_0/icon = SubResource("CameraTexture_sgr8y")
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource("2_s043o")
+QueuedSongs = Array[Resource("res://addons/OvaniPlugin/OvaniSong.gd")]([ExtResource("3_mi722")])
+Intensity = 0.845
+
+[node name="Node" type="Node" parent="Node"]
 
 [connection signal="item_selected" from="Control/ItemList" to="." method="_on_item_list_item_selected"]
 [connection signal="ready" from="Control/ItemList" to="." method="_on_item_list_ready"]
